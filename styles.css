@@ -1,0 +1,65 @@
+/*Default*/
+
+body {
+    background-color: #eee7db;
+    margin: 0 2.5rem;
+}
+
+h1 {
+    font-family: "Grenze Gotisch", serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #113c73;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+
+p, a {
+    font-family: "Libre Franklin";
+    font-size: 1rem;
+}
+
+/*Header*/
+.dateLocationDecor {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 0.8px;
+    margin-top: 14px;
+}
+
+p {
+    font-weight: 600;
+    color: #5f595d;
+    margin: 0;
+}
+
+a {
+    font-weight: 600;
+    color: #6d8ba7;
+    margin: 0;
+}
+
+.mainTitle {
+    width: 100%;
+    border-style: solid none double;
+    border-color: #5F595D;
+    border-top-width: 2px;
+}
+
+nav {
+    padding: 0 30%;
+    border-bottom-style: double;
+    border-color: #5F595D;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.25rem 0;
+    margin: 0;
+}

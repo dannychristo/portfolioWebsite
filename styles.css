@@ -406,3 +406,19 @@ img.left {
     font-weight: 400;
     color: #6d8ba7;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-style: double;
+    border-color: #5F595D;
+}
+
+footer a {
+    color: #5F595D;
+    font-weight: 400;
+}

@@ -360,3 +360,49 @@ img.left {
 .grid.bottom p {
     margin-bottom: 0.25rem;
 }
+
+/* Contact Box */
+.grid.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    margin-bottom: 0.25rem;
+}
+
+.contact h2 {
+    margin: 0;
+}
+
+.contactBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: dashed 0.125rem;
+    flex-shrink: 0;
+    border-color: #5F595D;
+}
+
+.social {
+    display: flex;
+    align-self: flex-start;
+    margin: 0.5rem;
+}
+
+.social img {
+    width: 1.5rem;
+    object-fit: scale-down;
+    margin-right: 0.5rem;
+}
+
+.social a {
+    font-family: "EB Garamond", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6d8ba7;
+}

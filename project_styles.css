@@ -50,6 +50,10 @@ nav a {
     border-top-width: 2px;
 }
 
+.mainTitle a {
+    text-decoration: none;
+}
+
 nav {
     padding: 0 30%;
     border-bottom-style: double;

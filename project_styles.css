@@ -206,3 +206,77 @@ footer a {
     color: #5F595D;
     font-weight: 400;
 }
+
+/* Responsive ahh */
+
+@media only screen and (max-width: 649px) { /* all beeMovie script gone */
+    body {
+        margin: 0 1rem;
+    }
+
+    .summaryAndSkills {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photoAndDesc {
+        flex-direction: column-reverse;
+    }
+
+    .summary, .skills, .photoAndDesc .image, .desc {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .dateLocationDecor p {
+        font-size: 0.5rem;
+    }
+
+    nav {
+        padding: 0 10%;
+    }
+
+    nav ul {
+        padding-top: 0;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 513px) { /* mobile view */
+    h1 {
+        font-size: 2rem;
+        padding-bottom: 0.4rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .summaryAndSkills {
+        margin: 0;
+    }
+
+    .summary {
+        margin: 0.5rem 0;
+    }
+
+    .summary ul {
+        margin: 0.25rem 0;
+    }
+
+    .summary li a {
+        font-size: 1.25rem;
+    }
+}

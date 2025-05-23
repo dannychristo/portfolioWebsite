@@ -74,6 +74,7 @@ h2 {
     text-align: center;
     font-family: "Black Han Sans", Arial, Helvetica, sans-serif;
     font-size: 2.25rem;
+    font-weight: 400;
     color: #EEE7DB;
     padding: 1% 0;
     margin: 0.5rem 0;
@@ -86,6 +87,21 @@ h3 {
     font-weight: 400;
     color: #113C73;
     margin: 0;
+}
+
+h4 {
+    font-family: "Black Han Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #EEE7DB;
+    background-color: #D85051;
+    margin: 0;
+    padding: 0.25rem 1rem;
+    width: fit-content;
+}
+
+a.link_to_project {
+    text-decoration: none;
 }
 
 p {
@@ -177,7 +193,6 @@ p {
 }
 
 .photoAndDesc .wrapper {
-    height: 25rem;
     width: 98%;
     margin-right: 1%;
     overflow: scroll;
@@ -189,6 +204,10 @@ p {
 
 .desc {
     width: 50%;
+}
+
+.desc p a {
+    color:#6d8ba7;
 }
 
 /* Footer */

@@ -1,0 +1,233 @@
+/*Global Variable*/
+body {
+    margin: 0;
+    background-color: #f8f5e9;
+}
+
+h1 {
+    font-family: "Londrina Solid";
+    font-size: 4rem;
+    color: #3a7d44;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Londrina Solid";
+    font-size: 2.5rem;
+    color: #f8f5e9;
+    margin: 0;
+}
+
+p, a, span, button {
+    font-family: "Lexend";
+    font-size: 1.25rem;
+    color: #f8f5e9;
+}
+
+/*Content*/
+
+header {
+    height: 5rem;
+    background-color: #3a7d44;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.headerContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContent h2 {
+    padding: 0 2.5rem;
+    min-width: 30%;
+    flex-grow: 1;
+}
+
+nav {
+    min-width: 30%;
+    padding-right: 2.5rem;
+    flex-grow: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 5%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li button {
+    background-color: #df6d14;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .headerContent h2 {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.mainSection {
+    top: 5rem;
+    position: relative;
+}
+
+.banner {
+    background-image: url("./images/bg_3.jpg");
+    height: 20rem;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.title h1 {
+    background-color:#f8f5e9;
+    width: 100%;
+    text-align: center;
+}
+
+.grid {
+    margin: 0 5%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 20rem;
+    height: 20rem;
+    background-color: #9dc08b;
+    margin: 0 1.25rem 2.5rem 1.25rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity span {
+    font-family: inherit;
+    font-size: inherit;
+    color: #df6d14;
+}
+
+.square p {
+    text-align: center;
+}
+
+.location #oldTraffic {
+    color:#df6d14;
+}
+
+.seven, .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .two, .five, .six, .four {
+        display: none;
+    }
+
+    .seven {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .square {
+        display: none;
+    }
+
+    .mobile, .one, .seven {
+        display: flex;
+        width: 100%;
+    }
+
+    .image {
+        height: 20rem;
+    }
+
+    .mobile {
+        height: fit-content;
+        padding: 5% 0;
+    }
+
+    .infoTextMobile {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 10%;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .infoTextMobile span {
+        font-family: inherit;
+        font-size: inherit;
+        color: #df6d14;
+    }
+
+    .infoTextMobile #oldTraffic {
+        color: #df6d14;
+    }
+}
+
+footer {
+    background-color:#3a7d44;
+    position: relative;
+    bottom: -5rem;
+    height: 2.5rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer span {
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+}

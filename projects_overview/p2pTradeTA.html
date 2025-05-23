@@ -13,7 +13,7 @@
     <header>
         <section class="dateLocationDecor">
             <p>South Tangerang, ID</p>
-            <p>22 May 2025</p>
+            <p>23 May 2025</p>
         </section>
         <section class="mainTitle">
             <a href="../main.html"><h1>Daniel Christopher Tjoe</h1></a>
@@ -27,38 +27,54 @@
         </nav>
     </header>
     <section id="projectTitle">
-        <h2>Project Name</h2>
+        <h2>P2P Energy Trading Simulation</h2>
     </section>
     <section class="content summaryAndSkills">
         <div class="summary">
             <h3>Summary</h3>
             <ul>
-                <li><a>list item</a></li>
-                <li><a>list item</a></li>
-                <li><a>list item</a></li>
+                <li><a>Simulates energy transactions between prosumers</a></li>
+                <li><a>Full code (no physical energy transfer)</a></li>
+                <li><a>Random inputs (energy generation, demand, and price data)</a></li>
             </ul>
         </div>
         <div class="skills">
             <h3>Skills</h3>
             <ul>
-                <li><a class="red">HTML</a></li>
-                <li><a class="blue">CSS</a></li>
-                <li><a class="yellow">Placeholder</a></li>
-                <li><a>Ignore this</a></li>
+                <li><a class="red">Writing</a></li>
+                <li><a class="blue">MATLAB</a></li>
+                <li><a class="yellow">Great Patience</a></li>
             </ul>
         </div>
     </section>
     <section class="content photoAndDesc">
         <div class="image">
             <div class="wrapper">
-                <img src="../assets/badminClub_wireframe.png">
+                <img src="../assets/FlowP2PET_MATLAB-spatialMap.drawio.png">
             </div>
-            <p id="caption">Wireframing</p>
+            <p id="caption">Spatial map of the MATLAB code</p>
         </div>
         <div class="desc">
+            <a href="https://github.com/dannychristo/P2PET" class="link_to_project"><h4>visit project! 🡥</h4></a>
             <h3>Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vestibulum velit, id sollicitudin quam maximus ac. Donec ut pulvinar velit. Quisque commodo arcu neque, eget auctor lorem ultrices nec. Praesent eu tellus sed orci blandit lacinia. Vivamus sodales dictum tincidunt. Maecenas rutrum laoreet nunc, quis sollicitudin sem. Integer varius ex at lobortis porttitor. Etiam in justo posuere, efficitur quam nec, fermentum augue. Nulla urna lectus, semper quis sagittis sed, iaculis nec nibh.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada vestibulum velit, id sollicitudin quam maximus ac. Donec ut pulvinar velit. Quisque commodo arcu neque, eget auctor lorem ultrices nec. Praesent eu tellus sed orci blandit lacinia. Vivamus sodales dictum tincidunt. Maecenas rutrum laoreet nunc, quis sollicitudin sem. Integer varius ex at lobortis porttitor. Etiam in justo posuere, efficitur quam nec, fermentum augue. Nulla urna lectus, semper quis sagittis sed, iaculis nec nibh.</p>
+            <p>This is my university final year project. Basically I created a simulation program in MATLAB. It simulates a theoretical
+                scenario where consumers can buy electricity from each other, assuming consumers have the ability to generate energy
+                (e.g solar panel) and becomes a prosumer. The energy transaction is facilitated by the double auction algorithm, the same algorithm
+                used in stock trading (correct me if im wrong). The inputs for the algorithm are each prosumer's and consumer's future electricity
+                generation and usage data and price to buy and sell. So ideally there's a predictive model that can provide those data. However
+                in this project I used data that are randomized within a range that is representative of some dataset.
+            </p>
+            <p>The simulation is divided into 4 MATLAB scripts. One script is somewhat the "dashboard", where all the input data and configuration
+                is made. Then there's the script to do data cleaing. The third one runs the double auction algorithm and the last do data processing.
+                I spent a lot of time working on the data processing script and honestly I'm quite proud. It's sorta modular, I can practically 
+                "turn on and off" any of the functions, depending on what analysis I wanna do. Adding new functions is also relatively much easier.
+                I'm not sure why I made it that way, because I definitely didn't need it. It would've been much faster if I wrote it in a 
+                non-modular way. But I guess I did it to anticipate if there're further analysis that needed to be done.
+            </p>
+            <p>One of my professor asked on why I decided to use MATLAB. First of all we had the license. Secondly, since it's about energy trading,
+                I was thinking that if I ever work on continuing that project, I would love to integrate it to an actual microgrid model. One
+                feature that would be useful is MATLAB's Simulink. Hence why I made it in MATLAB, for future "expansions".
+            </p>
         </div>
     </section>
     <footer>

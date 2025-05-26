@@ -2,6 +2,8 @@
 
 body {
     background-color: #eee7db;
+    /* background-image: radial-gradient(#eee7db, #d1c9bc); */
+    /* background-image: radial-gradient(ellipse at top, #f0eae0, transparent), radial-gradient(ellipse at bottom, #d1c9bc, transparent); */
     margin: 0 2.5rem;
 }
 
@@ -51,22 +53,39 @@ p, a {
     font-size: 1rem;
 }
 
-p.beeMovie { /* used everywhere */
-    font-size: 0.375rem;
-    font-family: 'Libre Franklin', sans-serif;
-    color: #5F595D;
-    font-weight: 400;
-    overflow-y: hidden;
-    text-align: justify;
-    margin: 0 0.25rem;
-}
-
 h2.sectionTitle { /* used in Projects and Contacts */
     font-family: "EB Garamond", sans-serif;
     font-size: 2.25rem;
     font-weight: 400;
     margin: 0 0 1rem;
     color:#113C73;
+}
+
+/* beeMovie script scripting */
+p.beeMovie { /* used everywhere */
+    width: fit-content;
+    font-size: 0.45rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #5F595D;
+    font-weight: 400;
+    line-height: 0.5rem;
+    /* overflow-y: hidden; */
+    text-align: justify;
+    /* text-justify: inter-character; */
+    margin: 0 0.25rem;
+}
+
+#measure {
+    margin: 0;
+}
+
+.beeMovieWrap {
+    overflow: hidden;
+    height: 100%;
+}
+
+.bee2 {
+    height: 10rem;
 }
 
 /*Header*/
@@ -120,6 +139,7 @@ nav ul {
 .profile {
     padding-bottom: 1rem;
     border-bottom: solid #5F595D 1px;
+    height: 21.8rem;
 }
 
 h2.banner {
@@ -142,7 +162,7 @@ h2.blueBG {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
-    height: 15.75rem;
+    height: 16rem;
 }
 
 #albar_img_container {
@@ -152,7 +172,7 @@ h2.blueBG {
 
 #albar_photo {
     width: 36.875rem;
-    height: 15.75rem;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -215,6 +235,7 @@ h2.blueBG {
 
 .side {
     width: 25%;
+    /* height: 100%; */
 }
 
 .middle {
@@ -225,7 +246,7 @@ h2.blueBG {
 }
 
 img.left {
-    height: 21.63125rem;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -263,7 +284,7 @@ img.left {
     font-weight: 400;
     color: #5F595D;
     text-align: justify;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .side.right {
@@ -272,7 +293,7 @@ img.left {
     justify-content: space-between;
 }
 
-#nara_3columns {
+#nara_3_wrapper {
     display: none;
 }
 
@@ -407,12 +428,12 @@ a.cardLinks {
 }
 
 /* Project: Grid Specificity */
-.grid.top p {
-    margin-top: 0.25rem;
+.grid.top .beeMovieWrap {
+    margin-top: 0.5rem;
 }
 
-.grid.bottom p {
-    margin-bottom: 0.25rem;
+.grid.bottom .beeMovieWrap {
+    margin-bottom: 0.5rem;
 }
 
 /* Project clickity clack */
@@ -444,7 +465,7 @@ a.cardLinks:active .cardLowerHalf h4.arrow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .contact p {
@@ -465,6 +486,7 @@ a.cardLinks:active .cardLowerHalf h4.arrow {
     border: dashed 0.125rem;
     flex-shrink: 0;
     border-color: #5F595D;
+    margin-top: 0.5rem;
 }
 
 .social {
@@ -521,6 +543,9 @@ footer a {
     h2.banner {
         font-size: 2rem;
     }
+    .profile {
+        height: unset;
+    }
 }
 
 @media only screen and (max-width: 1219px) { /* 3 columns */
@@ -557,11 +582,11 @@ footer a {
         width: 100%;
         height: 12rem;
         overflow: hidden;
+        display: block;
     }
 
     #nara_3columns {
         width: 100%;
-        display: block;
         object-fit: scale-down;
         object-position: 0 -65px;
     }
@@ -614,7 +639,7 @@ footer a {
         margin: 0 1rem;
     }
 
-    .beeMovie {
+    .beeMovie, .beeMovieWrap {
         display: none;
     }
 

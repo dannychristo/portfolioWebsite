@@ -2,6 +2,7 @@
 
 body {
     background-color: #eee7db;
+    /* background-image: radial-gradient(ellipse at top, #f0eae0, transparent), radial-gradient(ellipse at bottom, #d1c9bc, transparent); */
     margin: 0 2.5rem;
 }
 
@@ -208,6 +209,10 @@ p {
 
 .desc p a {
     color:#6d8ba7;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 /* Footer */

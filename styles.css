@@ -188,7 +188,7 @@ h2.blueBG {
 }
 
 #banner_bottom_right p {
-    width: 100%;
+    width: fit-content;
 }
 
 #banner_bottom_right h3 {
